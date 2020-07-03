@@ -1,3 +1,11 @@
+<!--
+ * @Author: Q-H-N
+ * @Date: 2020年07月03日11时23分17秒
+ * @LastEditTime: 2020年07月03日16时14分48秒
+ * @LastEditors: Q-H-N
+ * @Description: 
+ * @平凡的代码
+--> 
 <template>
   <div id="app">
     <div id="nav">
@@ -19,11 +27,10 @@
 
 #nav {
   padding: 30px;
-
   a {
     font-weight: bold;
     color: #2c3e50;
-
+    font-size: 500px;
     &.router-link-exact-active {
       color: #42b983;
     }
