@@ -1,13 +1,17 @@
 <!--
  * @Author: Q-H-N
  * @Date: 2020年07月03日17时02分32秒
- * @LastEditTime: 2020年07月03日17时38分20秒
+ * @LastEditTime: 2020年07月07日09时03分32秒
  * @LastEditors: Q-H-N
  * @Description: 背景图组件 制作
  * @平凡的代码
 -->
 <template>
-    <div :style="renderStyle"></div>
+    <div :style="renderStyle" class = "warrper-container">
+        <div class ="container"> 
+            <slot></slot>
+        </div>
+    </div>
 </template>
 
 <script>
@@ -39,9 +43,9 @@ export default {
     },
     components: {},
     methods: {
-        renderStyle() {
-            return {}
-        }
+        // renderStyle() {
+        //     return {}
+        // }
     },
     computed: {
         renderStyle: {
@@ -65,6 +69,16 @@ export default {
 }
 </script>
 <style lang="less" scoped>
-.class {
+.warrper-container {
+    position: relative;
+    &::after,::before{
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border:solid 1px #000
+    }
+    .container{
+        position: relative;
+    }
 }
 </style>

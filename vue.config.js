@@ -1,13 +1,12 @@
 /*
  * @Author: Q-H-N
  * @Date: 2020年07月03日11时35分35秒
- * @LastEditTime: 2020年07月03日11时38分12秒
+ * @LastEditTime: 2020年07月06日09时19分09秒
  * @LastEditors: Q-H-N
  * @Description:
  * @平凡的代码
  */
 
-console.log(process.env.NODE_ENV + '环境启动')
 const port = process.env.port || 10099
 const path = require('path')
 
@@ -15,7 +14,7 @@ function resolve(dir) {
     // __dirname:总是指向被执行 js 文件的绝对路径
     return path.join(__dirname, dir)
 }
-
+logs()
 module.exports = {
     // 出口文件夹 命名
     outputDir: 'dist',
@@ -64,4 +63,8 @@ module.exports = {
             }
         }
     }
+}
+function logs(){
+    console.log(process.env.VUE_APP_NODE_ENV + '环境启动')
+    console.log(process.env.VUE_APP_PORT+'端口启动')
 }

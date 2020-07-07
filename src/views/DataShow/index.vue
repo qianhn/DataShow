@@ -1,21 +1,26 @@
 <!--
  * @Author: Q-H-N
  * @Date: 2020年07月03日17时38分55秒
- * @LastEditTime: 2020年07月03日17时39分27秒
+ * @LastEditTime: 2020年07月06日14时15分08秒
  * @LastEditors: Q-H-N
  * @Description: 
  * @平凡的代码
 -->
 <template>
-    <div></div>
+    <div>
+         <background  > </background>
+    </div>
 </template>
 
 <script>
+import background from  '../../components/background'
 export default {
     data() {
         return {}
     },
-    components: {},
+    components: {
+        background
+    },
     methods: {},
     computed: {},
     watch: {},
