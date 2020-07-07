@@ -1,7 +1,7 @@
 /*
  * @Author: Q-H-N
  * @Date: 2020年07月03日11时35分35秒
- * @LastEditTime: 2020年07月06日09时19分09秒
+ * @LastEditTime: 2020年07月07日14时10分44秒
  * @LastEditors: Q-H-N
  * @Description:
  * @平凡的代码
@@ -41,7 +41,7 @@ module.exports = {
         //代理
         proxy: {
             '/dryb': {
-                target: 'https://h5.ihrss.neusoft.com/',
+                target: '',
                 ws: false,
                 changeOrigin: true
             }
@@ -66,5 +66,5 @@ module.exports = {
 }
 function logs(){
     console.log(process.env.VUE_APP_NODE_ENV + '环境启动')
-    console.log(process.env.VUE_APP_PORT+'端口启动')
+    console.log(process.env.VUE_APP_PORT + '端口启动')
 }
